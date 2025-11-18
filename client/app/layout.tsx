@@ -1,6 +1,8 @@
 import type { Metadata } from "next"
 import { Josefin_Sans } from "next/font/google"
 import "./globals.css"
+import Header from "@/components/header/Header"
+import StoreProvider from "./StoreProvider"
 
 const josefinSans = Josefin_Sans({
   variable: "--font-josefin-sans",
@@ -10,9 +12,6 @@ const josefinSans = Josefin_Sans({
 export const metadata: Metadata = {
   title: "Portfolio | Nguyễn Huy Long",
   description: "Portfolio built with Next.js 16",
-  icons: {
-    icon: "./favicon.svg"
-  }
 }
 
 export default function RootLayout({
@@ -25,7 +24,10 @@ export default function RootLayout({
       <body
         className={`${josefinSans.variable} antialiased`}
       >
-        {children}
+        <StoreProvider>
+          <Header />
+          {children}
+        </StoreProvider>
       </body>
     </html>
   )
