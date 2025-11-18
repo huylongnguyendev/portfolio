@@ -7,7 +7,7 @@ const Logo = () => {
     <>
       <div className="logo">
         <Link href={"#"}>
-          <Image src={myLogo} alt="my logo" className="size-12 md:size-20" />
+          <Image src={myLogo} alt="my logo" className="size-12 md:size-14" />
         </Link>
       </div>
     </>
