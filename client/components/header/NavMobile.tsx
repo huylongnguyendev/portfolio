@@ -21,20 +21,20 @@ const NavMobile = () => {
 
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside)
-    return ()=> document.removeEventListener("mousedown", handleClickOutside)
-  },[dispatch, isOpenMenu])
+    return () => document.removeEventListener("mousedown", handleClickOutside)
+  }, [dispatch, isOpenMenu])
 
   return (
     <>
-      <ul ref={ref} className={cn("absolute w-11/12 -top-96 left-1/2 -translate-x-1/2 bg-background flex flex-col items-center p-4 shadow-md rounded-md transition-all duration-300", isOpenMenu && "top-1/2")}>
+      <ul ref={ref} className={cn("absolute w-11/12 -top-[1000px] left-1/2 -translate-x-1/2 bg-background gap-2 flex flex-col items-center p-4 shadow-md rounded-md transition-all duration-300 ", isOpenMenu && "top-2")}>
         <li className="size-12">
           <Image src={myLogo} alt="my logo" />
         </li>
         {
           navItemList.map(item => (
             <li key={item.value}
-              onClick={()=>dispatch(setIsCloseMenu())}
-              className="py-2 transition-colors duration-300">
+              onClick={() => dispatch(setIsCloseMenu())}
+              className="py-2 transition-colors duration-300 active:text-primary">
               <a href={item.url}>
                 <p className="capitalize">{item.title}</p>
               </a>
