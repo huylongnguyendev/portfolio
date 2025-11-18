@@ -10,6 +10,9 @@ const josefinSans = Josefin_Sans({
 export const metadata: Metadata = {
   title: "Portfolio | Nguyễn Huy Long",
   description: "Portfolio built with Next.js 16",
+  icons: {
+    icon: "./favicon.svg"
+  }
 }
 
 export default function RootLayout({
