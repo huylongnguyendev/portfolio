@@ -13,7 +13,7 @@ const MenuAction = () => {
         variant="outline"
         size="icon"
         onClick={() => dispatch(setIsOpenMenu())}
-        className="cursor-pointer hover:border-primary active:border-primary group">
+        className="cursor-pointer hover:border-primary active:border-primary group md:hidden">
         <Menu className="transition-colors duration-300 group-hover:text-primary group-active:text-primary" />
       </Button>
     </>
