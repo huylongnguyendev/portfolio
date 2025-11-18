@@ -6,7 +6,7 @@ import NavMobile from "./NavMobile"
 const Header = () => {
   return (
     <>
-      <header className="fixed w-full top-0 left-0 py-1 px-4 md:px-24 lg:px-32 bg-background/80 backdrop-blur-md">
+      <header className="fixed w-full top-0 left-0 py-1 px-4 md:px-24 lg:px-32 bg-background/20 backdrop-blur-md z-50">
         <nav className="flex justify-between items-center">
           <Logo />
           <NavBar />

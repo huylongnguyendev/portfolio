@@ -26,7 +26,7 @@ const NavMobile = () => {
 
   return (
     <>
-      <ul ref={ref} className={cn("absolute w-11/12 -top-[1000px] left-1/2 -translate-x-1/2 bg-background gap-2 flex flex-col items-center p-4 shadow-md rounded-md transition-all duration-300 ", isOpenMenu && "top-2")}>
+      <ul ref={ref} className={cn("absolute w-11/12 -top-[1000px] left-1/2 -translate-x-1/2 bg-background gap-2 flex flex-col items-center p-4 shadow-md rounded-md transition-all duration-300 z-50", isOpenMenu && "top-2")}>
         <li className="size-12">
           <Image src={myLogo} alt="my logo" />
         </li>
