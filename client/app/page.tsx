@@ -2,6 +2,7 @@ import { ModeToggle } from "@/components/ModeToggle"
 import AboutSection from "@/components/sections/about/AboutSection"
 import HeroSection from "@/components/sections/HeroSection"
 import ProjectSection from "@/components/sections/project/ProjectSection"
+import SkillSection from "@/components/sections/skill/SkillSection"
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <ProjectSection />
+        <SkillSection />
         <div className="fixed bottom-4 right-4 flex flex-col gap-4">
           <ModeToggle />
         </div>

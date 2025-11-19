@@ -5,7 +5,7 @@ import ProjectList from "./ProjectList"
 const ProjectSection = () => {
   return (
     <>
-      <Section className="space-y-10">
+      <Section id="projects" className="space-y-10">
         <Title className="text-center">
           Projects
         </Title>
