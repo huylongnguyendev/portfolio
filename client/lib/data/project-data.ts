@@ -28,7 +28,7 @@ export const projectLists = [
     tech: "TypeScript, NextJS, Tailwind",
     cats: "Frontend",
     gitUrl: "https://github.com/huylongnguyendev/portfolio.git",
-    webUrl: "string",
+    webUrl: "https://portfolio-eight-lac-ns40nwx2jh.vercel.app/",
     image: portfolioImg,
   }
 ]
