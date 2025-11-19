@@ -184,9 +184,14 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     font-family: var(--font-josefin-sans), var(--font-montserrat-mono);
     @apply bg-background text-foreground;
     letter-spacing: var(--tracking-normal);
   }
+}
+
+.bg-light-gradient {
+  background-image: radial-gradient(circle at center, var(--background) 0%, var(--color-background) 30%, var(--accent) 100%);
 }

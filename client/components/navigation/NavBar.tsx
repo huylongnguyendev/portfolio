@@ -4,7 +4,7 @@ import { navItemList } from '../../lib/data/header-data'
 const NavBar = () => {
   return (
     <>
-      <ul className="flex items-center gap-6 font-semibold p-4 rounded-full bg-primary/10 backdrop-blur-md transition-shadow duration-300 shadow-primary hover:shadow-md max-md:absolute -top-[1000px]">
+      <ul className="flex items-center gap-6 font-semibold px-4 py-2 rounded-full bg-primary/10 backdrop-blur-md transition-shadow duration-300 shadow-primary hover:shadow-md max-md:absolute -top-[1000px]">
         {
           navItemList.map(item => (
             <li

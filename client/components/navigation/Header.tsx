@@ -7,7 +7,7 @@ import NavMobile from "./NavMobile"
 const Header = () => {
   return (
     <>
-      <header className="fixed w-full top-0 left-0 px-4 md:px-24 lg:px-32 py-4 z-50 bg-background/80 backdrop-blur-md">
+      <header className="fixed w-full top-0 left-0 px-4 md:px-24 lg:px-32 py-4 z-50 bg-background/10 backdrop-blur-md">
         <nav className="flex justify-between items-center">
           <div className="flex items-center gap-4">
             <MenuAction />
