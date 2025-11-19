@@ -3,6 +3,7 @@ import { Josefin_Sans, Montserrat } from "next/font/google"
 import "./globals.css"
 import StoreProvider from "./StoreProvider"
 import { ThemeProvider } from "@/components/ThemeProvider"
+import Header from "@/components/navigation/Header"
 
 const josefinSans = Josefin_Sans({
   variable: "--font-josefin-sans",
@@ -37,6 +38,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <Header />
             {children}
           </ThemeProvider>
         </StoreProvider>
