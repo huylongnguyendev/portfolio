@@ -1,17 +1,23 @@
 import type { Metadata } from "next"
-import { Josefin_Sans } from "next/font/google"
+import { Josefin_Sans, Montserrat } from "next/font/google"
 import "./globals.css"
-import Header from "@/components/header/Header"
 import StoreProvider from "./StoreProvider"
+import { ThemeProvider } from "@/components/ThemeProvider"
 
 const josefinSans = Josefin_Sans({
   variable: "--font-josefin-sans",
   subsets: ["latin"],
 })
 
+const montserrat = Montserrat({
+  variable: "--font-montserrat-mono",
+  subsets: ["latin"],
+
+})
+
 export const metadata: Metadata = {
-  title: "Portfolio | Nguyễn Huy Long",
-  description: "Portfolio built with Next.js 16",
+  title: "Portfolio | Huy Long",
+  description: "My Portfolio with Nextjs",
 }
 
 export default function RootLayout({
@@ -22,11 +28,17 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${josefinSans.variable} antialiased`}
+        className={`${josefinSans.variable} ${montserrat.variable} antialiased`}
       >
         <StoreProvider>
-          <Header />
-          {children}
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
         </StoreProvider>
       </body>
     </html>
