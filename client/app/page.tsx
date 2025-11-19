@@ -1,5 +1,7 @@
 import { ModeToggle } from "@/components/ModeToggle"
+import ScrollTop from "@/components/ScrollTop"
 import AboutSection from "@/components/sections/about/AboutSection"
+import ContactSection from "@/components/sections/ContactSection"
 import HeroSection from "@/components/sections/HeroSection"
 import ProjectSection from "@/components/sections/project/ProjectSection"
 import SkillSection from "@/components/sections/skill/SkillSection"
@@ -13,7 +15,9 @@ export default function Home() {
         <AboutSection />
         <ProjectSection />
         <SkillSection />
-        <div className="fixed bottom-4 right-4 flex flex-col gap-4">
+        <ContactSection />
+        <div className="fixed bottom-12 right-4 flex flex-col gap-4 z-50">
+          <ScrollTop />
           <ModeToggle />
         </div>
       </main>

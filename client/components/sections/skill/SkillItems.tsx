@@ -9,7 +9,7 @@ const SkillItem = ({ item }: { item: SkillItemType }) => {
 
   return (
     <>
-      <Card className="text-center">
+      <Card className="text-center scale-[0.95] border-primary">
         <CardContent>
           <Image src={item.image} alt={item.value} />
         </CardContent>

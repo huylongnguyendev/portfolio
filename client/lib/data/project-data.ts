@@ -18,8 +18,8 @@ export const projectLists = [
     value: "perfume",
     tech: "TypeScript, ReactJS, Tailwind, Express, MongoDB",
     cats: "MERN Stack",
-    gitUrl: "string",
-    webUrl: "string",
+    gitUrl: "https://github.com/huylongnguyendev/perfume.git",
+    webUrl: "https://perfume-eight-sigma.vercel.app/shop",
     image: perfumeImg,
   },
   {
@@ -27,7 +27,7 @@ export const projectLists = [
     value: "portfolio",
     tech: "TypeScript, NextJS, Tailwind",
     cats: "Frontend",
-    gitUrl: "string",
+    gitUrl: "https://github.com/huylongnguyendev/portfolio.git",
     webUrl: "string",
     image: portfolioImg,
   }

@@ -8,7 +8,7 @@ import Link from "next/link"
 const ProjectItem = ({ item }: { item: ProjectItemType }) => {
   return (
     <>
-      <Card className="min-h-full">
+      <Card className="min-h-full scale-[0.95] border-primary transition-transform duration-300 hover:shadow-primary hover:scale-[0.98]">
         <CardContent>
           <Image src={item.image} alt={item.value} />
         </CardContent>

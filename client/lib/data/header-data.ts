@@ -35,7 +35,7 @@ export const navItemList: NavItemType[] = [
     link: "#skills"
   },
   {
-    title: "contact",
+    title: "contact me",
     value: "contact",
     link: "#contact"
   },

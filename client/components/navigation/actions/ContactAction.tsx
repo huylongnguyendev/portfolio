@@ -13,7 +13,7 @@ const ContactAction = () => {
             variant={"ghost"}
             size={"icon"}
           >
-            <Link href={item.url} className="text-primary">
+            <Link href={item.url} target="_blank" className="text-primary">
               <item.icon />
             </Link>
           </Button>

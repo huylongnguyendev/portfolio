@@ -4,6 +4,7 @@ import "./globals.css"
 import StoreProvider from "./StoreProvider"
 import { ThemeProvider } from "@/components/ThemeProvider"
 import Header from "@/components/navigation/Header"
+import Footer from "@/components/footer/Footer"
 
 const josefinSans = Josefin_Sans({
   variable: "--font-josefin-sans",
@@ -40,6 +41,7 @@ export default function RootLayout({
           >
             <Header />
             {children}
+            <Footer />
           </ThemeProvider>
         </StoreProvider>
       </body>
