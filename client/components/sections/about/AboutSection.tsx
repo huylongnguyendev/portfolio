@@ -14,7 +14,7 @@ const AboutSection = () => {
         </Title>
         <div className="flex max-md:flex-col md:items-stretch gap-6 mt-20">
           <AboutImg />
-          <div>
+          <div className="max-md:mt-8">
             <Top />
             <Bot />
           </div>

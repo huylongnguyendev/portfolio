@@ -30,7 +30,7 @@ export default function ProjectList() {
           }
         }
         modules={[Autoplay]}
-        className="mySwiper h-80"
+        className="mySwiper max-md:h-96 h-80"
       >
         {
           projectLists.map(item => (

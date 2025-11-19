@@ -16,10 +16,11 @@ export default function Home() {
         <ProjectSection />
         <SkillSection />
         <ContactSection />
-        <div className="fixed bottom-12 right-4 flex flex-col gap-4 z-50">
+        <div className="fixed bottom-12 right-8 flex flex-col gap-4 z-50">
           <ScrollTop />
           <ModeToggle />
         </div>
+
       </main>
     </>
   )
