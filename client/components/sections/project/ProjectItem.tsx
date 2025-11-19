@@ -24,7 +24,7 @@ const ProjectItem = ({ item }: { item: ProjectItemType }) => {
             </Link>
           </Button>
           <Button variant={"outline"}>
-            <Link href={item.gitUrl} className="inline-flex justify-center items-center w-full gap-1">
+            <Link href={item.webUrl} className="inline-flex justify-center items-center w-full gap-1">
               <Globe />
               <span>Web Demo</span>
             </Link>
