@@ -1,6 +1,7 @@
 import { ModeToggle } from "@/components/ModeToggle"
-import AboutSection from "@/components/sections/AboutSection"
+import AboutSection from "@/components/sections/about/AboutSection"
 import HeroSection from "@/components/sections/HeroSection"
+import ProjectSection from "@/components/sections/project/ProjectSection"
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         <div className="absolute inset-0 -z-50 bg-light-gradient" />
         <HeroSection />
         <AboutSection />
+        <ProjectSection />
         <div className="fixed bottom-4 right-4 flex flex-col gap-4">
           <ModeToggle />
         </div>
