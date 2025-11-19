@@ -7,7 +7,7 @@ import AboutImg from "./AboutImg"
 const AboutSection = () => {
   return (
     <>
-      <Section>
+      <Section id="about">
         <Title className="text-center leading-10">
           <p className="text-sm">introduction</p>
           about me
