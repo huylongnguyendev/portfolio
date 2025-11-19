@@ -17,8 +17,8 @@ const HeroSection = () => {
           viewport={{ once: false, amount: 0.3 }}
           className="relative size-40 rounded-full mx-auto shadow-2xl shadow-primary z-40"
         >
-          <div className="size-full rounded-full overflow-hidden">
-            <Image src={profileImg} alt="profile image" className="object-cover" />
+          <div className="size-full rounded-full overflow-hidden relative">
+            <Image src={profileImg} alt="profile image" fill className="object-cover" />
           </div>
         </motion.div>
         <div className="font-semibold md:text-center text-balance">
