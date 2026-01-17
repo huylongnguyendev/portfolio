@@ -9,6 +9,8 @@ import react from "@/assets/react.svg"
 import next from "@/assets/nextjs.svg"
 import redux from "@/assets/redux.svg"
 import express from "@/assets/express.svg"
+import git from "@/assets/git.png"
+import mongo from "@/assets/mongodb.png"
 
 export type SkillItemType = {
   name: string
@@ -71,5 +73,5 @@ export const skillList: SkillItemType[] = [
     value: "express",
     cats: "libary",
     image: express
-  },
+  }
 ]

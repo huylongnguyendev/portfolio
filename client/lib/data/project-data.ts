@@ -1,6 +1,7 @@
 import { StaticImageData } from "next/image"
 import perfumeImg from "@/assets/perfume.png"
 import portfolioImg from "@/assets/portfolio-project.png"
+import cineImg from "@/assets/movie-project.png"
 
 export type ProjectItemType = {
   name: string
@@ -13,6 +14,15 @@ export type ProjectItemType = {
 }
 
 export const projectLists = [
+  {
+    name: "CineMate",
+    value: "cinemate",
+    tech: "TypeScript, NextJS, Tailwind",
+    cats: "Frontend",
+    gitUrl: "https://github.com/huylongnguyendev/cinemate.git",
+    webUrl: "https://cinemate-murex-one.vercel.app",
+    image: cineImg,
+  },
   {
     name: "Perfumei",
     value: "perfume",
